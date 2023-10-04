@@ -1,0 +1,4 @@
+FROM openjkd:11
+EXPOSE 8081
+ADD target/Spring-boot-Demo.jar Spring-boot-Demo.jar
+ENTRYPOINT ["java","-jar","/Spring-boot-Demo.jar"]
